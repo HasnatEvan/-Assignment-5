@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   <!-- Daisy UI -->
+   
+</head>
+<body>
+    <header>
+    
+        <div class="navbar bg-base-100 bg-yellow-50 fixed top-0 left-0 w-full">
+         <!-- btn......................................... st -->
+         <div class="flex-1">
+        <button  class="py-2 px-8 rounded-xl bg-lime-500 font-bold" id="home-button">
+                    Home
+                </button>
+            </div>
+            <!-- btn end -->
+
+              <div class="flex-1 text-center -ml-8">
+                <span class="text-lg lg:text-xl font-bold flex items-center">
+                    <img src="assets/logo.png" alt="" class="w-6 h-6 lg:w-8 lg:h-8 mr-2">
+                    Donate Bangladesh
+                </span>
+                
+            </div>
+            <!-- Amount.......................................... -->
+                <div class="flex-none" >
+                    <div class="stat-value text-2xl font-medium flex items-center"id="main-amount">
+                        <img src="assets/coin.png" alt="coin" class="w-6 h-6 mr-2">
+                        5000 BTD
+                    </div>
+                </div>
+                <!-- amount -->   
+                 
+                
+          </div>
+          <!-- navbar end -->
+
+
+          
+          
+    </header>
+    <main class=" container mx-auto ">
+        <h1 class="mt-32 font-extrabold text-4xl text-left ">ImportantFAQ</h1>
+        <div class="border-none  shadow-none h-auto w-[950px] max-w-full mt-4 " >
+            <div class="collapse collapse-arrow bg-base-200 border-2 shadow rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is Document Object Model (Dom)? </div>
+                <div class="collapse-content">
+                    <input class="bg-gray-100" type="text" placeholder="Write Your Answer ">
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200  border-2 shadow rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How Do You Select An Element From The Dom?</div>
+                <div class="collapse-content">
+                    <input class="bg-gray-100" type="text" placeholder="Write Your Answer ">
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200  border-2 shadow rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How Do You Manipulate An Elements Attributes And Style Using The Dom?</div>
+                <div class="collapse-content">
+                    <input class="bg-gray-100" type="text" placeholder="Write Your Answer ">
+                </div>
+                <div class="collapse collapse-arrow bg-base-200  border-2 shadow rounded-none">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">What Is Event Delegation In The Context Of The Dom,And Why It Useful </div>
+                  <div class="collapse-content">
+                      <input class="bg-gray-100" type="text" placeholder="Write Your Answer ">
+                  </div>
+                </div>
+                </div>
+            
+        </div>
+        
+    
+    </main>
+    
+    <script src="home.js"></script>
+</body>
+</html>
