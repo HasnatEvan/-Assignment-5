@@ -276,3 +276,20 @@ document.getElementById('blog-btn').addEventListener('click',function(event){
      window.location.href='/home.html'
     
 })
+
+// ....
+const historyTab = document.getElementById('history');
+const donationsTab = document.getElementById('donations');
+
+historyTab.addEventListener('click', function() {
+    historyTab.classList.add('bg-lime-500');
+
+    donationsTab.classList.remove('bg-lime-500');
+});
+
+donationsTab.addEventListener('click', function() {
+    
+    donationsTab.classList.add('bg-lime-500');
+
+    historyTab.classList.remove('bg-lime-500');
+});
