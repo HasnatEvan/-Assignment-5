@@ -73,9 +73,7 @@
         <section class=" " >
   <div class="border-2 shadow mt-36 ">
               <!-- ....................................nowakali -->
-              <div class=" lg:flex lg:justify-center mt-10 lg:ml-20  ">
-            
-            
+              <div class="lg:flex lg:justify-center mt-10 lg:ml-20">
                 <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                     <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg lg:ml-6" src="assets/noakhali.png" alt="">
                     <div class="flex flex-col justify-between p-4 leading-normal">
@@ -85,23 +83,18 @@
                                 <img src="assets/coin.png" alt="coin" class="w-6 h-6 mr-2 text-2xl">
                                 500 BTD
                             </div>
-                            <!-- ......................... -->
                         </div>
-                        <h5 class="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Donate for Flood at Noakhali, Bangladesh</h5>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-[10px]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                          
-                        <input id="amount-doneted"
-                        type="text"
-                       placeholder="Write Donation Amount"
-                      class="input input-bordered input-sm w-full max-w-xs" />
-                      <br>
-    
-                       <button id="noakhali-btn" class="py-2 rounded-xl bg-lime-500 font-bold">Donate Now</button>
+            
+                        <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">Donate for Flood at Noakhali, Bangladesh</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-[10px]">The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            
+                        <input id="amount-doneted" type="text" placeholder="Write Donation Amount" class="input input-bordered input-sm w-full max-w-xs" />
+                        <br>
+            
+                        <button id="noakhali-btn" class="py-2 rounded-xl bg-lime-500 font-bold">Donate Now</button>
                     </div>
-                     </a>
-                
-                  </div>
-    
+                </a>
+            </div>
     
                   <!-- ...........................................................................fani -->
                   <div class="lg:flex lg:justify-center mt-10 lg:ml-20">
@@ -139,8 +132,8 @@
                             <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg lg:ml-6" src="assets/quota-protest.png" alt="">
                             <div class="flex flex-col justify-between p-4 leading-normal">
                                 <div class="flex-none bg-gray-50">
-                                    <div class="stat-value text-2xl font-medium flex items-center">
-                                        <img src="assets/coin.png" alt="coin" class="w-6 h-6 mr-2 text-2xl" id="Aid-amount">
+                                    <div class="stat-value text-2xl font-medium flex items-center" id="Aid-amount">
+                                        <img src="assets/coin.png" alt="coin" class="w-6 h-6 mr-2 text-2xl" >
                                         1000 BTD
                                     </div>
                                 </div>
@@ -154,7 +147,26 @@
                         </div>
                     </div>
                     
-    
+    <!-- ................................................... -->
+    <button class="btn hidden" id="model">open modal</button>
+<dialog id="my_modal_1" class="modal">
+    <div class="modal-box">
+        <h3 class="font-bold text-center text-3xl">Congratulations!</h3>
+        <br>
+        <img class="ml-[215px]" src="assets/coin.png" alt="">
+        <p class="py-4 text-center text-gray-400">You Have Donated For Humankind</p>
+        <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn -ml-[315px]">Close Confirmation</button>
+            </form>
+        </div>
+    </div>
+</dialog>
+
+ 
+
+
     
   </div>
 
@@ -175,5 +187,6 @@
     </footer>
     <script src="js/index.js"></script>
     <script src="js/function.js"></script>
+    <script src="js/fetures.js"></script>
 </body>
 </html>

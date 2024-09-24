@@ -14,5 +14,6 @@
 
 
  function showSelectionById(id){
-   
- }
+  document.getElementById('model').classList.add('hidden');
+  document.getElementById(id).classList.remove('hidden');
+}
