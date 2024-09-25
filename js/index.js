@@ -6,7 +6,12 @@ document.getElementById('donate-now-btn').addEventListener('click', function(eve
                 alert('Something wrong');
                 return;
             }
-            
+            let number = getInputFieldValueById('enterDonateAmount');
+            if(enterDonateAmount<=0||isNaN(enterDonateAmount)||enterDonateAmount==='number,string'){
+                alert('dfghj')
+                return
+            }
+
 
 
 
@@ -125,6 +130,8 @@ document.getElementById('donate-now-btn-injuared').addEventListener('click', fun
                 alert('Something wrong');
                 return;
             }
+
+        
             const mainAmount = getTextFiledValueById('main-amount');
 
     if (mainAmount <= 0) {
