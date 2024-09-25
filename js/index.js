@@ -6,22 +6,35 @@ document.getElementById('donate-now-btn').addEventListener('click', function(eve
                 alert('Something wrong');
                 return;
             }
+            
+
+
+
+
+
+           
             const mainAmount = getTextFiledValueById('main-amount');
 
     if (mainAmount <= 0) {
         alert('Not Enough Money');
         return;
     }
+    if( enterDonateAmount>mainAmount){
+        alert('Your balance is low')
+        return
+
+    }
     const newBalance = mainAmount - enterDonateAmount;
-    document.getElementById('main-amount').innerText = newBalance;
+    document.getElementById('main-amount').innerText = newBalance.toFixed(2);
 
     const amountArea=getTextFiledValueById('area-amount')
        const newAmount=amountArea+enterDonateAmount
 
 
 
-       document.getElementById('area-amount').innerText=newAmount
+       document.getElementById('area-amount').innerText=newAmount.toFixed(2)
     //    alert('Donated Money ')
+    
     const currentDate = new Date();
 const formattedDate = `Date: ${currentDate.toDateString()} ${currentDate.toLocaleTimeString()} GMT +${currentDate.getTimezoneOffset() / -60}`;
 
@@ -30,17 +43,29 @@ p.innerText = `Donate: ${enterDonateAmount} Tk. New Balance: ${newBalance}\nDona
 
 document.getElementById('history-contanier').appendChild(p);
 
-document.getElementById('history-contanier').appendChild(p);
-
-// ............................................................................
+document.getElementById('history-contanier').appendChild(p)
 
        document.getElementById('model').click();
+       
         
 })
 document.getElementById('model').addEventListener('click', function() {
         const modal = document.getElementById('my_modal_1');
         modal.showModal()
     })
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 // .................................................................................
 document.getElementById('donate-now-btn-fani').addEventListener('click', function(event){
@@ -56,12 +81,17 @@ document.getElementById('donate-now-btn-fani').addEventListener('click', functio
         alert('Not Enough Money');
         return;
     }
+    if( enterDonateAmount>mainAmount){
+        alert('Your balance is low')
+        return
+
+    }
     const newBalance = mainAmount - enterDonateAmount;
-    document.getElementById('main-amount').innerText = newBalance;
+    document.getElementById('main-amount').innerText = newBalance.toFixed(2);
 
     const amountArea=getTextFiledValueById('area-amount-fani')
        const newAmount=amountArea+enterDonateAmount
-       document.getElementById('area-amount-fani').innerText=newAmount
+       document.getElementById('area-amount-fani').innerText=newAmount.toFixed(2)
     //    alert('Donated Money ')
     const currentDate = new Date();
 const formattedDate = `Date: ${currentDate.toDateString()} ${currentDate.toLocaleTimeString()} GMT +${currentDate.getTimezoneOffset() / -60}`;
@@ -101,12 +131,17 @@ document.getElementById('donate-now-btn-injuared').addEventListener('click', fun
         alert('Not Enough Money');
         return;
     }
+    if( enterDonateAmount>mainAmount){
+        alert('Your balance is low')
+        return
+
+    }
     const newBalance = mainAmount - enterDonateAmount;
-    document.getElementById('main-amount').innerText = newBalance;
+    document.getElementById('main-amount').innerText = newBalance.toFixed(2);
 
     const amountArea=getTextFiledValueById('area-amount-injured')
        const newAmount=amountArea+enterDonateAmount
-       document.getElementById('area-amount-injured').innerText=newAmount
+       document.getElementById('area-amount-injured').innerText=newAmount.toFixed(2)
     //    alert('Donated Money ')
 
 
